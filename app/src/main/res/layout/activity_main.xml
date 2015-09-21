@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/header_title"
+        android:textSize="@dimen/textview_header_title" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_title"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/popularMovie"
+                style="@style/ButtonStyle"
+                android:layout_marginTop="0dp"
+                android:text="@string/button_text_popular_movies"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/superDuo"
+                style="@style/ButtonStyle"
+                android:text="@string/button_text_super_duo"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buildItBigger"
+                style="@style/ButtonStyle"
+                android:text="@string/button_text_build_it_bigger"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/materialApp"
+                style="@style/ButtonStyle"
+                android:text="@string/button_text_material_app"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/goUbiquitous"
+                style="@style/ButtonStyle"
+                android:text="@string/button_text_material_app"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/capStone"
+                style="@style/ButtonStyle"
+                android:background="@color/button_background_capstone"
+                android:text="@string/button_text_capstone"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
